@@ -1,0 +1,33 @@
+.filmbox__upcoming {
+    padding: 1.25rem 0.4375rem;
+    margin-bottom: 2rem;
+}
+
+.filmbox__upcoming-header {
+    font-size: 1rem;
+    line-height: 1.1875rem;
+
+    color: var(--content);
+    
+    margin-bottom: 1.5rem;
+}
+
+.filmbox__upcoming-container-main {
+   overflow-x: scroll;
+   overflow-y: hidden;
+}
+
+.filmbox__upcoming-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+
+    padding: 1rem 0;
+}
+
+@media screen and (min-width: 700px) {
+    .filmbox__upcoming {
+        padding: 1.25rem 2rem;
+    }
+}

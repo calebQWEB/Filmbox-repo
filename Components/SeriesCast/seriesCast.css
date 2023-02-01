@@ -1,0 +1,50 @@
+.filmbox__series-cast-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filmbox__series-cast-image {
+    width: 8.125rem;
+    border-radius: 0.5rem;
+}
+
+.series-cast-name {
+    color: var(--white);
+    font-family: var(--fontsecondary);
+    font-weight: 700;
+    font-size: 0.8125rem;
+    line-height: 0.9375rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .filmbox__series-cast-image {
+        width: 8rem;
+    }
+
+    .series-cast-name {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .filmbox__series-cast-image {
+        width: 10rem;
+    }
+
+    .series-cast-name {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .filmbox__series-cast-image {
+        width: 12rem;
+    }
+
+    .series-cast-name {
+        font-size: 1.25rem;
+    }
+}

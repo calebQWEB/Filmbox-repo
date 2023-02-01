@@ -1,0 +1,156 @@
+.filmbox__watchlist {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    background-color: var(--secondary);
+    padding: 1.5rem;
+}
+
+.filmbox__watchlist:hover {
+    background-color: var(--body);
+}
+
+.filmbox__watch-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.watchlist-link {
+    text-decoration: none;
+}
+
+.filmbox__watchlist-image {
+    width: 6.9375rem;
+    height: 11.4375rem;
+}
+
+.filmbox__watchlist-title  {
+    font-family: var(--fontsecondary);
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    color: var(--white); 
+    
+    margin-bottom: 1rem;
+}
+
+.filmbox__watchlist-overview {
+    color: var(--white);
+    font-family: var(--fontsecondary);
+    font-weight: 400;
+    font-size: 0.6875rem;
+    line-height: 0.8125rem;
+    margin-bottom: 1rem;
+    
+}
+
+.cancel span:nth-child(1) {
+    transform: translate(0, 1px) rotate(45deg);
+}
+
+.cancel span:nth-child(2) {
+    transform: translate(0, -2px) rotate(-45deg);
+}
+
+.cancel span {
+    width: 1.5rem;
+    height: 0.2rem;
+    background-color: var(--content);
+    display: block;
+}
+
+.cancel {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 500px) {
+    .filmbox__watchlist-image {
+        width: 9rem;
+        height: 12rem;
+    }
+
+    .filmbox__watchlist-title  {
+        font-size: 1rem;
+    }
+
+    .filmbox__watchlist-overview {
+        font-size: 0.8rem; 
+        line-height: 1rem;     
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .filmbox__watchlist-image {
+        width: 10rem;
+    }
+
+    .filmbox__watchlist-title  {
+        font-size: 1.5rem;
+    }
+
+    .filmbox__watchlist-overview {
+        font-size: 0.85rem;  
+        line-height: 1rem;   
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .filmbox__watchlist-image {
+        width: 10rem;
+        height: 15rem;
+    }
+
+    .filmbox__watchlist-overview {
+        font-size: 1rem;  
+        line-height: 1.25rem;   
+    }
+
+    .cancel span {
+        width: 2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .filmbox__watchlist-image {
+        width: 15rem;
+        height: 22rem;
+    }
+
+    .filmbox__watchlist-title  {
+        font-size: 2rem;
+        line-height: 2.3125rem;
+    }
+
+    .filmbox__watchlist-overview {
+        font-size: 1.5rem;  
+        line-height: 2rem;   
+    }
+    .cancel span {
+        width: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .filmbox__watchlist-image {
+        width: 18.333125rem;
+        height: 30.225625rem;
+    }
+
+    .filmbox__watchlist-title  {
+        font-size: 2.5rem;
+        line-height: 2.3125rem;
+    }
+
+    .filmbox__watchlist-overview {
+        font-size: 2rem;
+        line-height: 1.25rem;  
+        line-height: 2.9375rem;
+    }
+
+    .cancel span {
+        width: 2.5rem;
+    }
+}

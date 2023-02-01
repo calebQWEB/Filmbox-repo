@@ -1,0 +1,52 @@
+.filmbox__watchlist-main {
+    padding: 1.25rem 0.4375rem;
+    margin-top: 7rem;
+}
+
+
+.filmbox__watchlist-header {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    color: var(--content);
+    margin-bottom: 1rem;
+}
+
+.filmbox__watchlist-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+    .filmbox__watchlist-main {
+        padding: 1.25rem 2rem;
+    }
+
+    .filmbox__watchlist-header {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .filmbox__watchlist-main {
+        padding: 1.25rem 2rem;
+    }
+
+    .filmbox__watchlist-header {
+        font-size: 1.5rem;
+        letter-spacing: 0.1875rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .filmbox__watchlist-main {
+        padding: 1.25rem 2rem;
+    }
+
+    .filmbox__watchlist-header {
+        font-size: 2rem;
+    }
+}

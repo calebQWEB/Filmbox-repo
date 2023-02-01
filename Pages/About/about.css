@@ -1,0 +1,69 @@
+.filmbox__about-main {
+    padding: 1.25rem 0.4375rem;
+    margin-top: 7rem;
+}
+
+.filmbox__about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.filmbox__about-logo {
+    width: 11.5rem;
+}
+
+.filmbox__about-info {
+    color: var(--white);
+    font-family: var(--fontsecondary);
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 0.9375rem;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 700px) {
+    .filmbox__about-main {
+        padding: 1.25rem 2rem;
+    }
+
+    .filmbox__about-logo {
+        width: 12rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .filmbox__about-logo {
+        width: 15rem;
+    }
+
+    .filmbox__about-info {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .filmbox__about-logo {
+        width: 18rem;
+    }
+
+    .filmbox__about-info {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .filmbox__about-logo {
+        width: 21.9375rem;
+    }
+
+    .filmbox__about-info {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}

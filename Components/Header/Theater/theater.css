@@ -1,0 +1,62 @@
+.filmbox__theaters-link {
+    text-decoration: none;
+}
+
+.filmbox__theaters:hover {
+    background-color: var(--body);
+    border-radius: 0.625rem;
+}
+
+.filmbox__theaters {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.filmbox__theaters-title {
+    font-family: var(--fontsecondary);
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 2.5rem;
+    color: var(--white);
+}
+
+
+@media screen and (min-width: 1000px) {
+    .filmbox__theaters-image {
+        width: 7.5rem;
+        border-radius: 0.625rem;
+    }
+}
+
+@media screen and (min-width: 1115px) {
+    .filmbox__theaters-image {
+        width: 8rem;
+    }
+
+    .filmbox__theaters-title {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .filmbox__theaters-image {
+        width: 10rem;
+    }
+
+    .filmbox__theaters-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .filmbox__theaters-image {
+        width: 14rem;
+    }
+
+    .filmbox__theaters-title {
+        font-size: 2.1875rem;
+    }
+}

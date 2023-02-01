@@ -1,0 +1,163 @@
+nav {
+    background-color: var(--body);
+    padding: 1.25rem 0.4375rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.filmbox__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.filmbox-logo-link {
+    text-decoration: none;
+    width: 100%;
+}
+
+.filmbox-logo {
+    margin-right: auto;
+}
+
+.filmbox-search {
+    cursor: pointer;
+}
+
+
+.filmbox__pages-desktop {
+    display: none;
+}
+
+.filmbox__pages {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 16rem;
+    min-height: 18.8125rem;
+    background-color: var(--body);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    z-index: 100;
+}
+
+.filmbox__pages li {
+    padding: 0 0.4375rem;
+}
+
+.filmbox__pages li a{
+    font-size: 0.6875rem;
+    font-weight: 400;
+    line-height: 0.8125rem;
+    letter-spacing: 0em;
+    color: var(--content); 
+    text-decoration: none;  
+}
+
+.filmbox-hamburger {
+    cursor: pointer;
+}
+
+.filmbox-hamburger span {
+    display: block;
+    background-color: var(--content);
+    height: 0.1875rem;
+    width: 1.5625rem;
+    margin: 0.1875rem 0;
+}
+
+.watchlist-count {
+    background-color: var(--button);
+    color: var(--white);
+    padding: 0.1rem 1rem;
+    border-radius: 50%;
+    margin-left: 0.1rem;
+}
+
+.watchlist-none {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+    nav {
+        padding: 1.25rem 2rem;
+    }
+
+    .filmbox__pages {
+        display: none;
+    }
+
+    .filmbox__pages-desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    .filmbox__pages-desktop li a {
+        font-size: 0.6875rem;
+        font-weight: 400;
+        line-height: 0.8125rem;
+        text-decoration: none;
+        color: var(--content);
+    }
+
+    .filmbox-hamburger {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .filmbox-logo {
+        width: 15%;
+    }
+
+    .filmbox__pages-desktop li a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .filmbox-logo {
+        width: 10rem;
+        min-height: 100%;
+    }
+
+    .filmbox-search {
+        width: 2.8125rem;
+        min-height: 2.8125rem;
+    }
+
+    .filmbox__pages-desktop li a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .filmbox-logo {
+        width: 10rem;
+        min-height: 100%;
+    }
+
+    .filmbox-search {
+        width: 2.8125rem;
+        min-height: 2.8125rem;
+    }
+
+    .filmbox__pages-desktop li a {
+        font-size: 1.5865375rem;
+        line-height: 1.875rem;
+    }
+}

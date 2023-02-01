@@ -1,0 +1,122 @@
+.filmbox__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 0.4375rem;
+}
+
+.filmbox__header-container {
+    position: relative;
+}
+
+.filmbox__header-image {
+    width: 100%;
+}
+
+.play-icon {
+    font-size: 3.666875rem;
+    color: var(--white);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.filmbox__header-desktop {
+    display: none;
+    background-color: var(--secondary);
+    padding: 0.5rem;
+}
+
+.filmbox__header-desktop-h1 {
+    color: var(--content);
+    font-size: 1rem;
+    line-height: 1.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.filmbox__header-link {
+    color: var(--content);
+    font-size: 0.8rem;
+    line-height: 1.875rem;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 700px) {
+    .filmbox__header {
+        padding: 1.25rem 2rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .filmbox__header {
+        justify-content: space-between;
+    }
+
+    .filmbox__header-divider {
+        display: block;
+    }
+
+    .filmbox__header-desktop {
+        display: block;
+    }
+
+    .filmbox__header-desktop-h1 {
+        letter-spacing: 0.0825rem;
+    }
+
+    .filmbox__header-desktop-container {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 4rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .filmbox__header-image {
+        width: 50%;
+    }
+
+    .filmbox__header-desktop-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 4rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .filmbox__header-desktop-h1 {
+        color: var(--content);
+        font-size: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.875rem;
+        margin-bottom: 2rem;
+    }
+
+    .filmbox__header-link {
+        color: var(--content);
+        font-size: 1rem;
+        line-height: 1.875rem;
+        margin-top: 2rem;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .filmbox__header-desktop-h1 {
+        color: var(--content);
+        font-size: 1.5625rem;
+        line-height: 1.875rem;
+        margin-bottom: 2rem;
+    }
+}

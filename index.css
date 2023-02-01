@@ -1,0 +1,29 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bungee', sans-serif;
+}
+
+:root {
+    --body: #000000;
+    --content: #FDF5B2;
+    --secondary: #0c0c0c;
+    --button: #2c2c2c;
+    --white: #ffffffcc;
+    --fontsecondary: 'roboto', 'sans-serif';
+}
+
+::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.7em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--body);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 1em;
+  }

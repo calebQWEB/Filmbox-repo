@@ -1,0 +1,100 @@
+.filmbox__recommendation {
+    margin: 7rem 0;
+    padding: 1.25rem 0.4375rem;
+    overflow: hidden;
+}
+
+.filmbox__recommendation-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.filmbox__recommendation-top-picks-main {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.filmbox__recommendation-top-picks {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    
+    padding: 1rem 0;
+}
+
+.filmbox__buttons {
+    background-color: var(--secondary);
+    width: 10rem;
+
+    position: relative;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.filmbox__labels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.filmbox__labels span {
+    z-index: 1000;
+    font-size: 0.75rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.filmbox__slide {
+    background-color: var(--button);
+    display: block;
+    width: 50%;
+    height: 100%;
+
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+    .filmbox__buttons {
+        width: 12rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .filmbox__buttons {
+        width: 14rem;
+        padding: 1rem 1.2rem;
+    }
+
+    
+    .filmbox__labels span {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .filmbox__buttons {
+        width: 12rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .filmbox__slide {
+        background-color: var(--button);
+        display: block;
+        width: 50%;
+    }
+}
+

@@ -1,0 +1,47 @@
+.App {
+    background-color: var(--body);
+    position: relative;
+}
+
+body {
+    background-color: var(--body);
+}
+
+.filmbox__watchlist-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.watchlist-button {
+    background-color: var(--body);
+    color: var(--content);
+    padding: 0.5rem; 
+    width: 100%;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    box-shadow: 0px 4px 0px var(--button), 0px 8px 20px var(--secondary);
+}
+
+.watchlist-button:active {
+    box-shadow: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .watchlist-button {
+        padding: 1rem; 
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .watchlist-button {
+        padding: 1.5rem; 
+    }
+}

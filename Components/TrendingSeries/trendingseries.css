@@ -1,0 +1,33 @@
+.filmbox__trending-series {
+    padding: 1.25rem 0.4375rem;
+    margin-bottom: 2rem;
+}
+
+.filmbox__trending-series-header {
+    font-size: 1rem;
+    line-height: 1.1875rem;
+
+    color: var(--content);
+    
+    margin-bottom: 1.5rem;
+}
+
+.filmbox__trending-series-container-main {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.filmbox__trending-seriess-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+
+    padding: 1rem 0;
+}
+
+@media screen and (min-width: 700px) {
+    .filmbox__trending-series {
+        padding: 1.25rem 2rem;
+    }
+}

@@ -1,0 +1,127 @@
+.filmbox__searched {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    background-color: var(--secondary);
+    padding: 1.5rem;
+}
+
+.filmbox__searched:hover {
+    background-color: var(--body);
+}
+
+.filmbox__searched {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.searched-link {
+    text-decoration: none;
+}
+
+.filmbox__searched-image {
+    width: 6.9375rem;
+    height: 11.4375rem;
+}
+
+.filmbox__searched-title  {
+    font-family: var(--fontsecondary);
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    color: var(--white); 
+    
+    margin-bottom: 1rem;
+}
+
+.filmbox__searched-overview {
+    color: var(--white);
+    font-family: var(--fontsecondary);
+    font-weight: 400;
+    font-size: 0.6875rem;
+    line-height: 0.8125rem;
+    margin-bottom: 1rem;
+    
+}
+
+@media screen and (min-width: 500px) {
+    .filmbox__searched-image {
+        width: 9rem;
+        height: 12rem;
+    }
+
+    .filmbox__searched-title  {
+        font-size: 1rem;
+    }
+
+    .filmbox__searched-overview {
+        font-size: 0.8rem; 
+        line-height: 1rem;     
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .filmbox__searched-image {
+        width: 10rem;
+    }
+
+    .filmbox__searched-title  {
+        font-size: 1.5rem;
+    }
+
+    .filmbox__searched-overview {
+        font-size: 0.85rem;  
+        line-height: 1rem;   
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .filmbox__searched-image {
+        width: 10rem;
+        height: 15rem;
+    }
+
+    .filmbox__searched-overview {
+        font-size: 1rem;  
+        line-height: 1.25rem;   
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .filmbox__searched-image {
+        width: 15rem;
+        height: 22rem;
+    }
+
+    .filmbox__searched-title  {
+        font-size: 2rem;
+        line-height: 2.3125rem;
+    }
+
+    .filmbox__searched-overview {
+        font-size: 1.5rem;  
+        line-height: 2rem;   
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .filmbox__searched-image {
+        width: 18.333125rem;
+        height: 30.225625rem;
+    }
+
+    .filmbox__searched-title  {
+        font-size: 2.5rem;
+        line-height: 2.3125rem;
+    }
+
+    .filmbox__searched-overview {
+        font-size: 2rem;
+        line-height: 1.25rem;  
+        line-height: 2.9375rem;
+    }
+}
