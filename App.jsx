@@ -10,6 +10,7 @@ import MovieDetails from './Pages/movieDetails/MovieDetails'
 import SeriesDetails from './Pages/seriesDetails/SeriesDetails'
 import { useState } from 'react'
 import Search from './Pages/Search/Search'
+import Scroll from './Components/Scroll/Scroll'
 
 function App() {
   // The array we pass down to all the component so we can be able to manipulate and get all the details of the movie
@@ -28,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <Navbar watchlist={watchlist} setWatchlist={setWatchlist} />
-
+      <Scroll />
       <Routes>
         <Route path='/' element={<Home movieDetails={movieDetails}
           setMovieDetails={setMovieDetails}

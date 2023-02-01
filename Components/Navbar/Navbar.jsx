@@ -9,9 +9,18 @@ import { motion } from 'framer-motion'
 const Navbar = ({ watchlist }) => {
 
     const [menu, setMenu] = useState(false)
+    const [navHide, setNavHide] = useState(true)
 
     const showMenu = () => {
         setMenu(prevState => !prevState)
+
+        setNavHide(true)
+    }
+
+    // Below we have set an onClick function so we can add to each of our navLinks so that whenever we click it the mobile navBar collapses, while also setting the main menu itself to collapse as well
+    const navHideClick = () => {
+        setNavHide(false)
+        setMenu(false)
     }
 
     const variant = {
@@ -50,12 +59,17 @@ const Navbar = ({ watchlist }) => {
         <nav>
             <div className='filmbox__navbar'>
                 <Link to='/' className='filmbox-logo-link'><img src={Logo} alt='Logo' className='filmbox-logo'></img></Link>
-                {menu && (
-                    <motion.ul className='filmbox__pages' variants={variant} initial='initial' animate='animate'>
-                        <motion.li variants={child}><Link to='/watchlist'>Watchlist</Link></motion.li>
-                        <motion.li variants={child}><Link to='/recommendation'>Recommendation</Link></motion.li>
-                        <motion.li variants={child}><Link to='/about'>About</Link></motion.li>
-                    </motion.ul>
+
+                {navHide && (
+                    <div>
+                        {menu && (
+                            <motion.ul className='filmbox__pages' variants={variant} initial='initial' animate='animate'>
+                                <motion.li variants={child} onClick={navHideClick}><Link to='/watchlist'>Watchlist</Link></motion.li>
+                                <motion.li variants={child} onClick={navHideClick}><Link to='/recommendation'>Recommendation</Link></motion.li>
+                                <motion.li variants={child} onClick={navHideClick}><Link to='/about'>About</Link></motion.li>
+                            </motion.ul>
+                        )}
+                    </div>
                 )}
 
                 <Link to='search'>

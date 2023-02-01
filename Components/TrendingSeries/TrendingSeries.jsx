@@ -11,6 +11,7 @@ const TrendingSeries = ({ movieDetails, setMovieDetails, watchlist, setWatchlist
         Axios.get('https://api.themoviedb.org/3/tv/popular?api_key=a69eafdf8b6066459d68fd6cc1fa8986&language=en-US&page=1')
             .then((response) => {
                 setTrendingSeries(response.data.results)
+                console.log(response.data.results)
             }).catch((err) => {
                 console.log(err)
             })

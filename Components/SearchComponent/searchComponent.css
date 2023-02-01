@@ -1,21 +1,15 @@
-.filmbox__searched {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-
-    background-color: var(--secondary);
-    padding: 1.5rem;
-}
-
 .filmbox__searched:hover {
     background-color: var(--body);
 }
 
 .filmbox__searched {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     gap: 1rem;
+
+    background-color: var(--secondary);
+    padding: 1.5rem;
 }
 
 .searched-link {
